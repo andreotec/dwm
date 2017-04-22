@@ -66,8 +66,8 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "st", NULL };
 static const char *icecatcmd[]  = { "icecat", NULL };
 static const char *pcmancmd[]  = { "pcmanfm", NULL };
-static const char *telegramcmd[]  = { "proxychains4","/home/cryptus/Telegram/Telegram", NULL };
-static const char *torbcmd[]  = { "/home/cryptus/torbrowser/Browser/start-tor-browser", NULL };
+static const char *telegramcmd[]  = { "proxychains4","~/Telegram/Telegram", NULL };
+static const char *torbcmd[]  = { "~/torbrowser/Browser/start-tor-browser", NULL };
 static const char *scrotcmd[]  = { "scrot", "%Y-%m-%d-%H%M%S.png", "-e", "mv $f ~/Imagens/Screenshots", NULL };
 
 static Key keys[] = {
