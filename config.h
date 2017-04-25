@@ -66,8 +66,9 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "st", NULL };
 static const char *icecatcmd[]  = { "icecat", NULL };
 static const char *pcmancmd[]  = { "pcmanfm", NULL };
-static const char *telegramcmd[]  = { "proxychains4","~/Telegram/Telegram", NULL };
-static const char *torbcmd[]  = { "~/torbrowser/Browser/start-tor-browser", NULL };
+static const char *telegramcmd[]  = { "proxychains4","/home/cryptus/Telegram/Telegram", NULL };
+static const char *torbcmd[]  = { "/home/cryptus/torbrowser/Browser/start-tor-browser", NULL };
+static const char *pspcmd[]  = { "/home/cryptus/Downloads/PPSSPPSDL", NULL };
 static const char *scrotcmd[]  = { "scrot", "%Y-%m-%d-%H%M%S.png", "-e", "mv $f ~/Imagens/Screenshots", NULL };
 
 static Key keys[] = {
@@ -77,6 +78,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_i,      spawn,          {.v = icecatcmd } },
 	{ MODKEY|ShiftMask,             XK_p,      spawn,          {.v = pcmancmd } },
 	{ MODKEY|ControlMask,           XK_t,      spawn,          {.v = torbcmd } },
+	{ MODKEY|ControlMask,           XK_p,      spawn,          {.v = pspcmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ 0,                            XK_Print,  spawn,          {.v = scrotcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
